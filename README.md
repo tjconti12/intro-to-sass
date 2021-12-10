@@ -1,8 +1,4 @@
-# sass-and-tailwind
-
-
-
-## Sass - Syntactically Awesome Style Sheets
+# Sass - Syntactically Awesome Style Sheets
 ![](https://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png)
 
 What is Sass? Sass is a CSS extension language. This allows us to write CSS in a more synactically friendly way, that will be compiled to normal CSS. Sass allows us to use variables, nested rules, functions, and more! This can help keep your stylesheets well-organized and easier to read!
@@ -11,7 +7,7 @@ When it comes to websites, web browsers generally are only able to read files wi
 
 Sass will take the code written in a `.scss` file and compile it to a `.css` file for you. How do we compile files like this?? Well, first we need to install Sass!
 
-### Installing Sass
+## Installing Sass
 
 Since we previously installed `homebrew` during installfest, installing Sass with homebrew will be our best bet! To install using homebrew, run the following command anywhere in your terminal
 
@@ -31,7 +27,7 @@ npm install -g sass
 
 Now that Sass is installed, we can use it to compile our `.scss` files!
 
-### Getting Started with Sass
+## Getting Started with Sass
 
 Open up the `sass` directory and `touch style.scss` to create our first sass file. Now, inside of our `style.scss` file, lets add some styling to the `h1` tag inside of `index.html`. 
 
@@ -64,7 +60,7 @@ Sass is watching for changes. Press Ctrl-C to stop.
 
 Now Sass is automatically looking for changes to the `style.scss` file! Give it a try. Change the color of the `<h1>` tag inside of `style.scss`.
 
-### Sass Nesting
+## Sass Nesting
 
 One of the greatest benefits of using Sass, is that it allows us to nest elements just like we do in `HTML`. For example, lets say inside of our `index.html` we add an `<ul>` with multiple `<li>` elements.
 
@@ -112,7 +108,7 @@ This is so much easier to understand! Thank you Sass!!
 
 Also, only `<li>` tags that are inside of a `<ul>` will be styled! A lone `<li>` outside of the `<ul>` will *not* be styled. So Sass helps with the specificity of elements! If we grab an element by its id or class in the `style.scss` file, we can ensure that we are only styling elements *inside* of that element.
 
-### Variables in Sass
+## Variables in Sass
 
 Yes Sass has variables! Just like Javascript does! Anyone want to DRY up their CSS??
 
@@ -145,7 +141,7 @@ ul {
 }
 ```
 
-### Functions in Sass
+## Functions in Sass
 
 Yes Sass has functions!! You can create your own functions, or utilize some of the built in ones. For the purpose of this lesson, we will just use the `mix()` built in function.
 
