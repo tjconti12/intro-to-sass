@@ -174,3 +174,44 @@ ul {
 
 Sass has so many built in features such as Partials, Modules, Mixins, Inheritance and even Operators! I encourage you to dive into Sass at some point in your career. It will make working with CSS so much more flexible!
 
+
+## Intro into Tailwind CSS
+
+Learning CSS is great! But what if you don't ever want to write *ANY* css? Wouldn't it be cool if we could so all our styling by never leaving the `index.html`? Tailwind can help with that!!
+
+What exactly is Tailwind CSS? Tailwind is a CSS framework that uses classes to style your html elements. Essentially, someone already wrote all the CSS for you, you just need to define which elements get which style. 
+
+There are numerous available CSS frameworks (bootstrap is a popular one as well). What makes Tailwind so powerful (and more useful than bootstrap) is that the styles are less specific. For example, in a framework such as bootstrap, you may create a button. Bootstrap has styles for a button, so all you have to do is give it a button class and all the styling is done! [For example](https://codepen.io/Saidalmaghribi/pen/oEWgbw)
+
+In Tailwind, we use classes to define specific styles (such as color, margin, padding, ect). This allows us to customize our styles, compared to a framework like bootstrap.
+
+Lets first install Tailwind, and then we will jump into specific examples!
+
+### Installing and setting up Tailwind CSS
+
+We are going to install tailwind using `npm`. Lets `cd tailwind` to enter the tailwind directory. Inside of this directory, we are going to run
+```zsh
+npm install -D tailwindcss
+```
+
+Next we need to create a `tailwind.config.js` file. To do this, run this command
+```zsh
+npx tailwindcss init
+```
+
+`npx` is included with the installation of node. While similar to `npm`, `npx` handles packages differently. You will learn more about it in future lectures.
+
+Now we need to add some stuff to our `tailwind.config.js` file. Open up the `tailwind.config.js` file and add the following inside of it
+
+```js
+module.exports = {
+  content: ["./index.html"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+```
+
+The `content` section tells Tailwind the path to which files it should scan. In this case, we only want it to scan our `index.html` file (`"./index.html"` is our relative path).
